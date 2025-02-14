@@ -1,82 +1,78 @@
-figure {
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    margin: 20px;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-}
-  body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    margin: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
     padding: 0;
-  }
-   
-a {
-        width: 280px;
-        height: 79px;
-        color: black;
-        padding: 16px;
-        margin: 5px;
-        background-color: #22D4FD;
-        border-radius: 10px;
-        
-    }
-  
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-}
-.col-6 {
-    flex: 1;
-    min-width: 300px;
-    padding: 20px;
+    margin:0px;
 }
 
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-}
   
-  .h1 {
-    text-align: center;
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque {
+    color: #22D4FD; ;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    justify-content: space-between;
+}
+.presentacion__contenido {
+    width: 615px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.presentacion__contenido__titulo {
     font-size: 36px;
-    margin: 0;
-    padding: 0;
-  }
-  .p{
+    font-family: "Krona One", serif;
+}
+.presentacion__contenido__texto {
     font-size: 24px;
-  }
-  strong{
-    color: #22D4FD;
-  }
-  #main {
-    width: 515px;
-    height: 482px;
-    margin-top: 10rem;
-    
-  } 
+    font-family: "Montserrat", serif;
+}
+.presentacion__enlaces{
+  display: flex;
+  justify-content: space-between;
+}
+.presentacion__enlaces__link {
+  width: 190px;
   
+ text-align: center;
+  background-color: #22D4FD;
+  padding: 21.5px 0;
+  border-radius: 16px;
+  font-family: "Montserrat", serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black
+}
+
   
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: 550px;
+}
+
+ 
+
 
   
   
