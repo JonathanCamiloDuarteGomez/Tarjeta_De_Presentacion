@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Tarjeta De Presentación</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <nav class="header__menu">
+          <a class="header__menu__link" href="index.html">Home</a>
+          <a class="header__menu__link" href="sobreMi.html">Sobre mí</a>
+      </nav>
+  </header>
     <main>
       <div class="presentacion">
         <section class="presentacion__contenido">
@@ -17,25 +22,28 @@
           </h1>
           <p class="presentacion__contenido__texto">
             ¡Hola! Soy Jonathan Duarte, desarrollador especializado en Frontend
-            y Backend con experiencia en Java, Kotlin, Angular y más. Transformo
-            ideas en soluciones digitales impactantes.
+            y Backend. Transformo ideas en soluciones digitales impactantes.
           </p>
 
           <div class="presentacion__enlaces">
+            <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes: </h2>
             <a
             class="presentacion__enlaces__link"
               href="https://www.linkedin.com/in/JonathanCamiloDuarteGomez/"
               title="LinkedIn Profile"
               target="_blank"
               rel="noopener"
-              ><i class="fa fa-linkedin" aria-hidden="true"> Linkedind </i></a
-            >
+              >
+                <img src="/assets/linkedin.png" alt="linkedin">
+                Linkedind </a>
             <a
             class="presentacion__enlaces__link"
               href="https://github.com/JonathanCamiloDuarteGomez"
               target="_blank"
               rel="noopener"
-              ><i class="fas fa-github-alt"> GitHub</i></a
+              >
+                <img src="/assets/github.png" alt="github">
+                GitHub</a
             >
             <a
             class="presentacion__enlaces__link"
@@ -43,16 +51,19 @@
               title="YouTube Channel"
               target="_blank"
               rel="noopener"
-              ><i class="fa fa-youtube" aria-hidden="true">Youtube</i></a
-            >
+              >
+                <img src="/assets/video.png" alt="youtube">
+                Youtube</a>
           </div>
         </section>
         <figure>
-          <img src="yoBn.PNG" alt="Jonathan Duarte" />
+          <img src="./assets/yoBn.PNG" alt="Jonathan Duarte" />
         </figure>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <img class="footer__imagen" src="./assets/logo.png" alt="Logo" />
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
